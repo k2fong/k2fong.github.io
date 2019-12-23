@@ -15,11 +15,7 @@
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
 
-         <a-animation attribute="rotation"
-               dur="3000"
-               to="0 360 0"
-               repeat="indefinite">
-        <a-marker type='barcode' value='6'>
+        <a-marker type='barcode' value='6' animation="property: rotation; dur: 3000; to: 0 360 0; loop: true" >
             <a-text position='0 2.0 0' rotation="0 0 0" color="black" value="Hello, MaiMai!"></a-text>
             <a-image position='0 0.5 0.5' src="top.png"></a-image>
             <a-image position='0 0.5 -0.5' src="bottom.png"></a-image>
@@ -29,7 +25,6 @@
             <!--a-box position='0 0.5 0' scale="1 1 1" color="yellow"-->
             </a-box>
         </a-marker>
-        </a-animation>
 
         <a-marker type='barcode' value='7'>
             <a-box position='0 0.5 0' scale="1 1 1" color="yellow">
