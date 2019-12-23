@@ -13,6 +13,7 @@
 
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
+            <a-asset-item id="asset-bow" src="https://raw.githubusercontent.com/k2fong/k2fong.github.io/master/models/Bow.gltf"></a-asset-item>
         </a-assets>
 
         <a-marker type='barcode' value='6' animation="property: rotation; dur: 3000; to: 0 360 0; loop: true" >
@@ -27,6 +28,11 @@
         </a-marker>
 
         <a-marker type='barcode' value='7'>
+            <a-entity
+                animation-mixer
+                gltf-model="#asset-bow"
+                scale="1 1 1">
+            </a-entity>
             <a-box position='0 0.5 0' scale="1 1 1" color="yellow">
         </a-marker>
 
