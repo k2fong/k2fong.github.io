@@ -17,7 +17,8 @@
             <a-asset-item id="turtle-mtl" src="models/NOVELO_TURTLE.mtl"></a-asset-item>
         </a-assets>
 
-        <a-marker type='barcode' value='6' animation="property: rotation; dur: 3000; to: 0 360 0; loop: true" >
+        <!--a-marker type='barcode' value='6' animation="property: rotation; dur: 3000; to: 0 360 0; loop: true"-- >
+        <a-marker type='barcode' value='6' >
             <a-text position='0 2.0 0' rotation="0 0 0" color="black" value="Hello, MaiMai!"></a-text>
             <a-image position='0 0.5 0.5' src="images/Wrap-Peppermint-Mint.png"></a-image>
             <a-image position='0 0.5 -0.5' src="images/Wrap-Peppermint-Mint.png"></a-image>
@@ -34,7 +35,7 @@
                 gltf-model="#animated-asset"
                 scale="2 2 2">
             </a-entity-->
-            <a-entity scal="1 1 1" position="0 0.5 0" obj-model="obj: #turtle-obj; mtl: #turtle-mtl">
+            <a-entity scal="0.5 0.5 0.5" position="0 0 0" obj-model="obj: #turtle-obj; mtl: #turtle-mtl">
             </a-entity>
             <!--a-box position='0 0.5 0' scale="1 1 1" color="yellow"-->
         </a-marker>
