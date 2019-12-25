@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+
+        <a-assets>
+            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/k2fong/k2fong.github.io/master/models/RU Bow.gltf"></a-asset-item>
+            <a-asset-item id="turtle-obj" src="models/NOVELO_TURTLE.obj"></a-asset-item>
+            <a-asset-item id="turtle-mtl" src="models/NOVELO_TURTLE.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-marker type='barcode' value='0'>
+            <a-image position='0 1.1 0' rotation="90 0 0" scale="1.5 1.5 1.5" src="images/Letter-A.png"></a-image>
+        </a-marker>
+
+        <a-marker type='barcode' value='1'>
+            <a-image position='0 1.1 0' rotation="90 0 0" scale="1.5 1.5 1.5" src="images/Letter-N.png"></a-image>
+        </a-marker>
+
+        <a-marker type='barcode' value='2'>
+            <a-image position='0 1.1 0' rotation="90 0 0" scale="1.5 1.5 1.5" src="images/Letter-R.png"></a-image>
+        </a-marker>
+
+        <a-marker type='barcode' value='3'>
+            <a-image position='0 1.1 0' rotation="90 0 0" scale="1.5 1.5 1.5" src="images/Letter-D.png"></a-image>
+        </a-marker>
+
+        <a-marker type='barcode' value='4'>
+            <a-image position='0 1.1 0' rotation="90 0 0" scale="1.5 1.5 1.5" src="images/Letter-A.png"></a-image>
+        </a-marker>
+
+        <a-marker type='barcode' value='5'>
+            <a-image position='0 1.1 0' rotation="90 0 0" scale="1.5 1.5 1.5" src="images/Letter-I.png"></a-image>
+        </a-marker>
+
+        <a-marker type='barcode' value='6' >
+            <a-image position='0 1.1 0' rotation="90 0 0" scale="1.5 1.5 1.5" src="images/Arrow.png"></a-image>
+        </a-marker>
+
+        <a-marker type='barcode' value='7' >
+            <a-image position='0 1.1 0' rotation="90 0 0" scale="1.5 1.5 1.5" src="images/Letter-Q.png"></a-image>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
